@@ -1,0 +1,55 @@
+.h2Title{
+    background-color:rgba(76, 163, 197, 0.856);
+    padding: 5px 0px 5px 5px;
+}
+.classe-cursos{
+    background-color:rgba(183, 213, 224, 0.747);
+    padding-top:10px;
+    padding-bottom:10px;
+}
+.add-curso{
+    background-color:rgba(183, 213, 224, 0.747);
+    padding: 10px 25px 10px 10px;
+}
+.classe-disciplinas{
+    background-color:rgba(183, 213, 224, 0.747);
+    padding-top:10px;
+    padding-bottom:10px;
+}
+.add-disciplina{
+    background-color:rgba(183, 213, 224, 0.747);
+    padding: 10px 25px 10px 10px;
+}
+.classe-salas{
+    background-color:rgba(183, 213, 224, 0.747);
+    padding-top:10px;
+    padding-bottom:10px;
+}
+.add-sala{
+    background-color:rgba(183, 213, 224, 0.747);
+    padding: 10px 25px 10px 10px;
+}
+.classe-usuarios{
+    background-color:rgba(183, 213, 224, 0.747);
+    padding-top:10px;
+    padding-bottom:10px;
+}
+.add-usuario{
+    background-color:rgba(183, 213, 224, 0.747);
+    padding: 10px 25px 10px 10px;
+}
+.storagedContentStyle{
+    background-color:rgba(183, 213, 224, 0.747);
+    padding: 10px 25px 10px 10px;
+}
+button {
+    padding:5px 10px 5px 10px;
+    background-color:#0d6efd;
+    border-radius:10px;
+    color:whitesmoke;
+    font-weight:bold;
+    border-style:none;
+    margin-top:10px;
+    margin-left:10px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}

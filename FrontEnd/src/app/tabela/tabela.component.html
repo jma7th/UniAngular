@@ -1,0 +1,52 @@
+<!-- Barra de Pesquisa
+<form class="p-2 mb-2 bg-body-tertiary border-bottom">
+      <input type="search" class="form-control" autocomplete="false" placeholder="Digite o curso...">
+</form> -->
+<!-- Tabela -->
+<div class="table-responsive small">
+    
+    
+    <!-- Selecionar Curso -->
+    <h2 class="h2Title">Cursos</h2>
+    <ul class="cursos">
+    <li *ngFor="let curso of cursos">
+        <button [class.selected]="curso === cursoEscolhido" type="button" (click)="onSelect(curso)">
+        <span class="name">{{curso.nome}}</span>
+        </button>
+    </li>
+    </ul>   
+
+    <div *ngIf="cursoEscolhido" id="cursoStyle">
+        <h2>{{cursoEscolhido.nome | uppercase}}</h2>
+
+        <table>
+            <tr>
+                <th>Disciplina</th>
+                <th>Professor</th>
+                <th>Sala</th>
+                <th>Andar</th>
+            </tr>
+            <tr *ngFor="let disciplina of disciplinas; let i = index;">
+                <td *ngIf="discp.includes(i+1)">
+                {{disciplina.nome}}
+                </td>
+                <td *ngIf="discp.includes(i+1)">
+                {{disciplina.dscr}}
+                </td>
+                <td *ngIf="discp.includes(i+1)">
+                    <span *ngFor="let sala of salas;let j = index">
+                    <a *ngIf="j === i">
+                    {{sala.numSala}}
+                    </a>
+                    </span>
+                </td>
+                <td *ngIf="discp.includes(i+1)">
+                <span *ngFor="let sala of salas; let j = index">
+                    <a *ngIf="j === i">
+                    {{sala.andar}}
+                    </a>
+                </span>
+                </td>
+            </tr>
+        </table>
+      </div>
